@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="section">
+
+<h1>All Diagnostic Services</h1>
+
+<div class="grid">
+
+{% for service in services %}
+
+<div class="card">
+
+<h3>{{ service }}</h3>
+
+<p>Accurate diagnostic testing performed using advanced laboratory equipment.</p>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</section>
+
+{% endblock %}
